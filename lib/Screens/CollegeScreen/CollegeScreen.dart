@@ -1,3 +1,4 @@
+import 'package:college_management/Screens/CollegeDetailScreen/CollegeDetailScreen.dart';
 import 'package:college_management/Theme/Theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -245,19 +246,24 @@ class _CollegeScreenState extends State<CollegeScreen> {
                                 ),
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          CollegeDetailScreen(),
+                                    ),
+                                  );
+                                },
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      MyTheme.primaryColor, // Background color
-                                  foregroundColor: Colors.white, // Text color
+                                  backgroundColor: MyTheme.primaryColor,
+                                  foregroundColor: Colors.white,
                                   padding: EdgeInsets.symmetric(
-                                      horizontal: 20,
-                                      vertical: 12), // Button padding
+                                      horizontal: 20, vertical: 12),
                                   shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(
-                                        10), // Button border radius
+                                    borderRadius: BorderRadius.circular(10),
                                   ),
-                                  elevation: 5, // Button elevation
+                                  elevation: 5,
                                 ),
                                 child: Text("Apply Now"),
                               )
