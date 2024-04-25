@@ -80,8 +80,8 @@ class _CollegeScreenState extends State<CollegeScreen> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 10,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -91,63 +91,61 @@ class _CollegeScreenState extends State<CollegeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                           border: Border.all(
                             color: Colors.grey,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(5)),
-                      child: Text(
+                      child: const Text(
                         "MVSH Engineering college",
-                        style: TextStyle(
-                            color: const Color.fromARGB(255, 0, 0, 0)),
+                        style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                           border: Border.all(
                             color: Colors.grey,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(5)),
-                      child: Text(
+                      child: const Text(
                         "MVSH Engineering college",
-                        style: TextStyle(
-                            color: const Color.fromARGB(255, 0, 0, 0)),
+                        style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                           border: Border.all(
                             color: Colors.grey,
                             width: 2,
                           ),
                           borderRadius: BorderRadius.circular(5)),
-                      child: Text(
+                      child: const Text(
                         "MVSH Engineering college",
-                        style: TextStyle(
-                            color: const Color.fromARGB(255, 0, 0, 0)),
+                        style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                       ),
                     ),
                   ],
                 ),
               ),
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.all(20),
               child: Card(
+                color: Colors.white,
                 elevation: 5,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
@@ -157,7 +155,7 @@ class _CollegeScreenState extends State<CollegeScreen> {
                   children: [
                     Stack(
                       children: [
-                        ClipRRect(
+                        const ClipRRect(
                           borderRadius: BorderRadius.vertical(
                             top: Radius.circular(15.0),
                           ),
@@ -167,32 +165,28 @@ class _CollegeScreenState extends State<CollegeScreen> {
                         Positioned(
                           left: 10,
                           top: 10,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(50)),
+                          child: CircleAvatar(
+                            backgroundColor: Colors.white,
                             child: IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.share),
+                              icon: const Icon(Icons.share),
                             ),
                           ),
                         ),
                         Positioned(
                           right: 10,
                           top: 10,
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(50)),
+                          child: CircleAvatar(
+                            backgroundColor: Colors.white,
                             child: IconButton(
                               onPressed: () {},
-                              icon: Icon(Icons.bookmark_border),
+                              icon: const Icon(Icons.bookmark_border),
                             ),
                           ),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Padding(
@@ -201,7 +195,7 @@ class _CollegeScreenState extends State<CollegeScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Expanded(
+                          const Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -227,12 +221,12 @@ class _CollegeScreenState extends State<CollegeScreen> {
                           Column(
                             children: [
                               Container(
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                     horizontal: 7, vertical: 5),
                                 decoration: BoxDecoration(
-                                    color: Color(0xFF27C200),
+                                    color: const Color(0xFF27C200),
                                     borderRadius: BorderRadius.circular(6)),
-                                child: Row(
+                                child: const Row(
                                   children: [
                                     Text(
                                       "4.3",
@@ -247,36 +241,36 @@ class _CollegeScreenState extends State<CollegeScreen> {
                               ),
                               ElevatedButton(
                                 onPressed: () {
-                                  Navigator.pushReplacement(
+                                  Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) =>
-                                          CollegeDetailScreen(),
+                                          const CollegeDetailScreen(),
                                     ),
                                   );
                                 },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: MyTheme.primaryColor,
                                   foregroundColor: Colors.white,
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       horizontal: 20, vertical: 12),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   elevation: 5,
                                 ),
-                                child: Text("Apply Now"),
+                                child: const Text("Apply Now"),
                               )
                             ],
                           )
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       indent: 14,
                       endIndent: 14,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Padding(
@@ -291,7 +285,7 @@ class _CollegeScreenState extends State<CollegeScreen> {
                                 width: 26,
                                 height: 26,
                               ),
-                              Text(
+                              const Text(
                                 "More than 1000+ students have been placed",
                                 style: TextStyle(
                                     fontSize: 10,
@@ -300,7 +294,7 @@ class _CollegeScreenState extends State<CollegeScreen> {
                               ),
                             ],
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Icon(
                                 Iconsax.eye,
