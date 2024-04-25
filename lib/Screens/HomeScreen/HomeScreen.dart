@@ -12,7 +12,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // late String? selectedValue;
   String _selectedValue = 'Bachelor of technology';
   List<String> options = [
     'Bachelor of Technology',
@@ -81,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   secondary: Icon(
-                    optionIcons[option], // Retrieve icon for the option
+                    optionIcons[option],
                   ),
                   controlAffinity: ListTileControlAffinity.trailing,
                 ),

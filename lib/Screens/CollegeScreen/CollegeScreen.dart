@@ -214,7 +214,6 @@ class _CollegeScreenState extends State<CollegeScreen> {
                                       fontWeight: FontWeight.w600,
                                       color: Colors.grey),
                                 ),
-                                // Add other information as needed
                               ],
                             ),
                           ),

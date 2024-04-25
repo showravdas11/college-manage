@@ -245,8 +245,7 @@ class _CollegeDetailScreenState extends State<CollegeDetailScreen>
                                     width: 50,
                                     height: 50,
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(
-                                          10), // Adjust the radius as needed
+                                      borderRadius: BorderRadius.circular(10),
                                       image: const DecorationImage(
                                         image: AssetImage(
                                             "assets/images/student1.jpg"),
@@ -261,8 +260,7 @@ class _CollegeDetailScreenState extends State<CollegeDetailScreen>
                                     width: 50,
                                     height: 50,
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(
-                                          10), // Adjust the radius as needed
+                                      borderRadius: BorderRadius.circular(10),
                                       image: const DecorationImage(
                                         image: AssetImage(
                                             "assets/images/student1.jpg"),
@@ -277,8 +275,7 @@ class _CollegeDetailScreenState extends State<CollegeDetailScreen>
                                     width: 50,
                                     height: 50,
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(
-                                          10), // Adjust the radius as needed
+                                      borderRadius: BorderRadius.circular(10),
                                       image: const DecorationImage(
                                         image: AssetImage(
                                             "assets/images/student1.jpg"),
@@ -293,8 +290,7 @@ class _CollegeDetailScreenState extends State<CollegeDetailScreen>
                                 height: 50,
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
-                                  borderRadius: BorderRadius.circular(
-                                      10), // Adjust the radius as needed
+                                  borderRadius: BorderRadius.circular(10),
                                 ),
                                 child: const Center(child: Text("12+")),
                               ),
